@@ -1,0 +1,500 @@
+.productCardList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0px;
+  /* border: 1px solid greenyellow; */
+}
+.featuredproducts {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.featuredproducts button {
+  text-align: center;
+  width: 200px;
+  height: 38px;
+  border: 0;
+  margin-bottom: 9px;
+}
+.productCard {
+  /* width: calc(150% - 20px);  */
+  width: 100%;
+  height: 479px;
+  text-align: center;
+  /* border: 1px solid red;    */
+  margin: 1rem 0.5rem 0 0;
+  position: relative;
+  /* align-items: left; */
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+}
+
+.productCard:hover .productCardHoverImg {
+  opacity: 1;
+
+}
+
+.productCardImg {
+  width: 100%;
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  
+  /* border-radius: 10px; */
+}
+
+.newArrivalCardBox {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.productCardHoverImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.productCardBtn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.productCard:hover .productCardBtn {
+  top: 68%;
+  opacity: 1;
+}
+
+.productCardContent {
+  margin: 1rem 0 0 0;
+  margin-bottom: 1rem;
+}
+
+.productCardContent h4 {
+  font-size: 16px;
+  color: var(--primary) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  margin-bottom: 0px;
+  text-align: left;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productCardContent p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 0 !important;
+  text-align: left;
+  font-weight: 400;
+}
+
+.banner{
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+.banner h1{
+font-size: 60px;
+font-weight: 600;
+}
+
+
+
+
+.productCardWishlist {
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-light);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productCardWishlist svg {
+  width: 20px;
+  height: 20px;
+}
+
+.productCardWishlist:hover svg {
+  fill: red;
+}
+
+.productCardListByCategory .productCardImg {
+  height: 400px;
+}
+
+.productCardSliderImg {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* =====Responsive=========== */
+/* @media (min-width: 319.98px) and (max-width: 379.98px) {
+  .productCardContent p:last-child {
+    font-size: 14px;
+    padding: 0 3px;
+  }
+  .productCardList {
+    justify-content: center;
+  }
+  .productCard {
+    height: 280px;
+  }
+  .productCardImg {
+    height: 200px;
+    background-position: center;
+  }
+  .productCardWishlist {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  .productCardContent h4 {
+    font-size: 14px;
+    margin: -10px 0 0px 0;
+    font-family: mediumfont;
+  }
+  .productCardContent p {
+    font-size: 14px;
+    padding: 0 3px;
+  }
+  .productCardWishlist svg {
+    width: 17px;
+    height: 17px;
+  }
+  .productCardWishlist {
+    width: 30px;
+    height: 30px;
+  }
+  .productCardBtn {
+    top: 70%;
+  }
+
+  .productCard:hover .productCardBtn {
+    top: 58%;
+  }
+  .sectionBg {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 424.98px) {
+  .productCardContent p:last-child {
+    font-size: 14px;
+    padding: 0 3px;
+  }
+  .productCardList {
+    justify-content: center;
+  }
+  .productCard {
+    height: 280px;
+  }
+  .productCardImg {
+    height: 200px;
+    background-position: center;
+  }
+  .productCardWishlist {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  .productCardContent h4 {
+    font-size: 14px;
+    margin: -10px 0 0px 0;
+    font-family: mediumfont;
+  }
+  .productCardContent p {
+    font-size: 14px;
+    padding: 0 3px;
+  }
+  .productCardWishlist svg {
+    width: 17px;
+    height: 17px;
+  }
+  .productCardWishlist {
+    width: 30px;
+    height: 30px;
+  }
+  .productCardBtn {
+    top: 70%;
+  }
+
+  .productCard:hover .productCardBtn {
+    top: 58%;
+  }
+  .sectionBg {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 575.98px) {
+  .productCardContent p:last-child {
+    font-size: 14px;
+    padding: 0 3px;
+  }
+  .productCardList {
+    justify-content: center;
+  }
+  .productCard {
+    height: 310px;
+  }
+  .productCardImg {
+    height: 220px;
+    background-position: center;
+  }
+  .productCardWishlist {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  .productCardContent h4 {
+    font-size: 14px;
+    margin: -10px 0 0px 0;
+    font-family: mediumfont;
+  }
+  .productCardContent p {
+    font-size: 14px;
+    padding: 0 3px;
+  }
+  .productCardWishlist svg {
+    width: 17px;
+    height: 17px;
+  }
+  .productCardWishlist {
+    width: 30px;
+    height: 30px;
+  }
+  .productCardBtn {
+    top: 70%;
+  }
+
+  .productCard:hover .productCardBtn {
+    top: 58%;
+  }
+  .sectionBg {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768.98px) {
+  .productCardContent p:last-child {
+    font-size: 14px;
+    padding: 0 3px;
+  }
+  .productCardList {
+    justify-content: center;
+  }
+  .productCard {
+    height: 320px;
+  }
+  .productCardImg {
+    height: 220px;
+    background-position: center;
+  }
+  .productCardWishlist {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  .productCardContent h4 {
+    font-size: 14px;
+    margin: -10px 0 0px 0;
+    font-family: mediumfont;
+  }
+  .productCardContent p {
+    font-size: 14px;
+    padding: 0 3px;
+  }
+  .productCardWishlist svg {
+    width: 17px;
+    height: 17px;
+  }
+  .productCardWishlist {
+    width: 30px;
+    height: 30px;
+  }
+  .productCardBtn {
+    top: 70%;
+  }
+
+  .productCard:hover .productCardBtn {
+    top: 58%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+  .productCardContent p:last-child {
+    font-size: 14px;
+  }
+  .productCardList {
+    justify-content: center;
+  }
+  .productCard {
+    height: 330px;
+  }
+  .productCardImg {
+    height: 230px;
+    background-position: center;
+  }
+  .productCardWishlist {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  .productCardContent h4 {
+    font-size: 14px;
+    margin: -10px 0 5px 0;
+    font-family: mediumfont;
+  }
+  .productCardContent p {
+    font-size: 14px;
+  }
+  .productCardWishlist svg {
+    width: 17px;
+    height: 17px;
+  }
+  .productCardWishlist {
+    width: 30px;
+    height: 30px;
+  }
+  .productCardBtn {
+    top: 70%;
+  }
+
+  .productCard:hover .productCardBtn {
+    top: 58%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {
+  .productCardContent p:last-child {
+    font-size: 14px;
+  }
+  .productCardList {
+    justify-content: center;
+  }
+  .productCard {
+    height: 370px;
+  }
+  .productCardImg {
+    height: 270px;
+    background-position: center;
+  }
+  .productCardWishlist {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  .productCardContent h4 {
+    font-size: 14px;
+    margin: -10px 0 5px 0;
+    font-family: mediumfont;
+  }
+  .productCardContent p {
+    font-size: 14px;
+  }
+  .productCardWishlist svg {
+    width: 17px;
+    height: 17px;
+  }
+  .productCardWishlist {
+    width: 30px;
+    height: 30px;
+  }
+  .productCardBtn {
+    top: 70%;
+  }
+
+  .productCard:hover .productCardBtn {
+    top: 58%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+  .productCardContent p:last-child {
+    font-size: 14px;
+  }
+  .productCardList {
+    justify-content: center;
+  }
+  .productCard {
+    height: 370px;
+  }
+  .productCardImg {
+    height: 270px;
+    background-position: center;
+  }
+  .productCardWishlist {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  .productCardContent h4 {
+    font-size: 14px;
+    margin: -10px 0 5px 0;
+    font-family: mediumfont;
+  }
+  .productCardContent p {
+    font-size: 14px;
+  }
+  .productCardWishlist svg {
+    width: 17px;
+    height: 17px;
+  }
+  .productCardWishlist {
+    width: 30px;
+    height: 30px;
+  }
+  .productCardBtn {
+    top: 70%;
+  }
+
+  .productCard:hover .productCardBtn {
+    top: 58%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1359.98px) {
+  .productCard {
+    height: 420px;
+  }
+  .productCardImg {
+    height: 300px;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1359.98px) {
+}
+
+@media (min-width: 1360px) and (max-width: 1439.98px) {
+}
+
+@media (min-width: 1440px) and (max-width: 1536.98px) {
+}
+
+@media (min-width: 1537px) and (max-width: 1920px) {
+} */
